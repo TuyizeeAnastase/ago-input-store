@@ -1,0 +1,77 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title":"Ago-input order",
+        "version":"1.0.0",
+        "description":"API documentation for ago input order"
+    },
+    "paths":{
+        "/api/register": {
+            "post": {
+              "summary": "Register a new user",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "201": {
+                  "description": "User created successfully"
+                }
+              }
+            }
+        },
+        "/api/login": {
+            "post": {
+              "summary": "Login user",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/UserLogin"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "User logged in successfully"
+                }
+              }
+            }
+          }
+        },
+        "components": {
+            "schemas": {
+              "User": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  }
+                }
+              },
+              "UserLogin": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+        }
+}
