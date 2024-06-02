@@ -3,14 +3,18 @@ import { User } from '../models/User'
 import { Seed } from '../models/Seed';
 import { Fertilizer } from '../models/Fertilizer';
 import { Order } from '../models/Order';
+import dotenv from 'dotenv';
+
+
+dotenv.config(); 
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
   host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: 'password',
-  database: 'ago-input',
+  port: parseInt(process.env.port as string, 10), 
+  username: process.env.username,
+  password: process.env.password,
+  database: process.env.database,
   synchronize: true,
   logging: false,
   entities: [User,Seed,Fertilizer,Order],

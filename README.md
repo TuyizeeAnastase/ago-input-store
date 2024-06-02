@@ -21,6 +21,7 @@ Our store provides high-quality seeds and fertilizers to help you achieve a boun
 - Create `.env` in project root directory
 - add PORT value `PORT=`
 - add database `type`,`host`,`username`,`password` and `port`
+- you copy from `.env.example` and replace with configuration values.
 
 
 ### Running server
@@ -40,12 +41,15 @@ Our store provides high-quality seeds and fertilizers to help you achieve a boun
 - [Create order](http://localhost:4000/api/order)
 - [get order](http://localhost:4000/api/orders)
 - [approver or reject order](http://localhost:4000/api/orders/2/approve)
+- [get all seeds](http://localhost:4000/api/seeds)
+- [get all fertilizers](http://localhost:4000/api/fertilizers)
 
 
 ## Tasks
 - signup and login
 - view list of orders by with only admin role and view own orders by customers
 - create order when only logged in
+- Unit Testing
 
 ## screenshot
 
