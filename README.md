@@ -50,6 +50,7 @@ Our store provides high-quality seeds and fertilizers to help you achieve a boun
 - view list of orders by with only admin role and view own orders by customers
 - create order when only logged in
 - Unit Testing
+- Deployment
 
 ## screenshot
 
