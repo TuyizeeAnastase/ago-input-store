@@ -53,5 +53,12 @@ Our store provides high-quality seeds and fertilizers to help you achieve a boun
 
 ## screenshot
 
+# Get all sorted orders by customer name
+
 ![Screenshot from 2024-06-01 12-31-01](https://github.com/TuyizeeAnastase/ago-input-store/assets/42033331/09afcca2-17ca-4586-8447-c443065a2609)
+
+# Request order
+
+![Screenshot from 2024-06-02 09-37-18](https://github.com/TuyizeeAnastase/ago-input-store/assets/42033331/1e4c7819-476e-4d06-8d22-4fcaac0efabd)
+
 
